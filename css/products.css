@@ -1,10 +1,22 @@
+
+testo{
+    color: #100F13;
+    color: #3D3236;
+    color: #4E5970;
+    color: #AA846D;
+    color: #698FBB;
+    color: #BCC9DA;
+    
+}
+
+
 *{
     margin: 0;
     padding: 0;
 }
 
 body{
-    background-color: #0F2040;
+    background-color: #100F13;
     color: #000;
     font-family: "Exo";
 }
@@ -40,8 +52,8 @@ body{
     flex-wrap: wrap-reverse;
     align-items: center;
     justify-content: space-between;
-    background: #2E4F8C;
-    color:#fff;
+    background: #4E5970;
+    color:#BCC9DA;
     grid-area: header;
 }
 
@@ -57,7 +69,7 @@ li:last-child {
   
   li a {
     display: block;
-    color: white;
+    color: #BCC9DA;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -65,7 +77,7 @@ li:last-child {
   }
   
   li a:hover:not(.active) {
-    background-color: #123D8C;
+    background-color: #698FBB;
   }
   
   .active {
@@ -84,7 +96,7 @@ li:last-child {
   }
 
 .contenedor .contenido{
-    background-color: whitesmoke;
+    background-color: #BCC9DA;
     grid-area: contenido;
     display: flex;
     flex-direction: column;
@@ -135,8 +147,8 @@ li:last-child {
 
 
 .contenedor .footer{
-    background: #2E4F8C;
-    color: #fff;
+    background: #4E5970;
+    color: #BCC9DA;
     grid-area: footer;
     position: relative;
     display: flex;
@@ -154,7 +166,7 @@ li:last-child {
 }
 
 .fa-brands{
-    color: #fff;
+    color: #BCC9DA;
     padding: 10px;
     font-size: 30px;
     width: 10%;
@@ -194,7 +206,7 @@ li:last-child {
     }
     
     .fa-brands{
-        color: #fff;
+        color: #BCC9DA;
         padding: 25px;
         font-size: 30px;
         text-align: center;
@@ -223,8 +235,8 @@ li:last-child {
     }
 
     .contenedor .footer{
-        background: #2E4F8C;
-        color: #fff;
+        background: #4E5970;
+        color: #BCC9DA;
         grid-area: footer;
         display: flex;
         flex-direction: column-reverse;
@@ -243,7 +255,7 @@ li:last-child {
     }
 
     .fa-brands{
-        color: #fff;
+        color: #BCC9DA;
         padding: 15px;
         font-size: 30px;
         text-align: center;

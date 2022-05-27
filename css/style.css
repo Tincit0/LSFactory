@@ -4,7 +4,7 @@
 }
 
 body{
-    background-color: #0F2040;
+    background-color: #100F13;
     color: #000;
     font-family: "Exo";
 }
@@ -41,8 +41,8 @@ body{
     flex-wrap: wrap-reverse;
     align-items: center;
     justify-content: space-between;
-    background: #2E4F8C;
-    color:#fff;
+    background: #4E5970;
+    color:#BCC9DA;
     grid-area: header;
 }
 
@@ -58,7 +58,7 @@ li:last-child {
   
   li a {
     display: block;
-    color: white;
+    color: #BCC9DA;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -66,7 +66,7 @@ li:last-child {
   }
   
   li a:hover:not(.active) {
-    background-color: #123D8C;
+    background-color: #698FBB;
   }
   
   .active {
@@ -85,7 +85,7 @@ li:last-child {
   }
 
 .contenedor .contenido{
-    background-color: whitesmoke;
+    background-color: #BCC9DA;
     grid-area: contenido;
     display: flex;
     flex-direction: column;
@@ -106,12 +106,13 @@ li:last-child {
 }
 .contenido h1{
     color: black;
+    letter-spacing: 2px;
 }
 
 .contenedor .sidebar{
-    color: whitesmoke;
+    color: #3D3236;
     grid-column: 3 / 4;
-    background: #8C6104;
+    background: #698FBB;
     min-height: 100px;
     grid-area: sidebar;
     display: flex;
@@ -120,42 +121,26 @@ li:last-child {
 }
 
 #sub1{
+    color: #BCC9DA;
     text-align: center;
     padding: 10px;
 }
 #nota{
     padding: 10px;
-    font-size: 17px;
+    font-size: 18px;
     text-align: justify;
-    line-height: 30px;
+    line-height: 28px;
 }
 #epigrafe{
     padding: 20px;
     text-align: center;
-    color: white;
-}
-
-
-.contenedor .widget-1,
-.contenedor .widget-2{
-    background: #123D8C;
-    color: #fff;
-    height: 100px;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.contenedor .widget-1{
-    grid-area: widget-1;
-}
-.contenedor .widget-2{
-    grid-area: widget-2;
+    color: #BCC9DA;
+    letter-spacing: 1px;
 }
 
 .contenedor .footer{
-    background: #2E4F8C;
-    color: #fff;
+    background: #4E5970;
+    color: #BCC9DA;
     grid-area: footer;
     display: flex;
     flex-direction: row;
@@ -172,7 +157,7 @@ li:last-child {
 }
 
 .fa-brands{
-    color: #fff;
+    color: #BCC9DA;
     padding: 10px;
     font-size: 30px;
     width: 10%;
