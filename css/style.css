@@ -99,6 +99,10 @@ li:last-child {
 .gif{
     padding: 10px;
 }
+iframe{
+    overflow: hidden;
+}
+
 .info{
     text-align: justify;
     padding: 10px;
