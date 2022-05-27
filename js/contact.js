@@ -35,15 +35,15 @@ const validarCampo = (expresion, input, campo) => {
     if(expresion.test(input.value)){
         document.getElementById(`grupo_${campo}`).classList.remove('formulario_grupo-incorrecto');
         document.getElementById(`grupo_${campo}`).classList.add('formulario_grupo-correcto');
-        document.querySelector(`#grupo_${campo} i`).classList.add('fa-solid fa-circle-check');
-        document.querySelector(`#grupo_${campo} i`).classList.remove('fa-solid fa-circle-xmark');
+        document.querySelector(`#grupo_${campo} i`).classList.add('fa-circle-check');
+        document.querySelector(`#grupo_${campo} i`).classList.remove('fa-circle-xmark');
         document.querySelector(`#grupo_${campo} .formulario_input-error`).classList.remove('formulario_input-error-activo');
         campos[campo] = true;
     } else{
         document.getElementById(`grupo_${campo}`).classList.add('formulario_grupo-incorrecto');
         document.getElementById(`grupo_${campo}`).classList.remove('formulario_grupo-correcto');
-        document.querySelector(`#grupo_${campo} i`).classList.add('fa-solid fa-circle-xmark');
-        document.querySelector(`#grupo_${campo} i`).classList.remove('fa-solid fa-circle-check');
+        document.querySelector(`#grupo_${campo} i`).classList.add('fa-circle-xmark');
+        document.querySelector(`#grupo_${campo} i`).classList.remove('fa-circle-check');
         document.querySelector(`#grupo_${campo} .formulario_input-error`).classList.add('formulario_input-error-activo');
         campos[campo] = false;
     }
@@ -66,16 +66,21 @@ formulario.addEventListener('submit',(e)=>{
 
     const terminos= document.getElementById('terminos');
 
-    if(campos.nombre && campos.apellido && campos.correo && campos.telefono){
+    if(campos.nombre && campos.apellido && campos.correo && campos.telefono && terminos.checked){
         formulario.reset();
 
         document.getElementById('formulario_mensaje-exito').classList.add('formulario_mensaje-exito-activo');
-        setTimeout(()=>{
-            document.getElementById('formulario_mensaje-exito').classList.add('formulario_mensaje-exito');
+        setTimeout(() => {
+            document.getElementById('formulario_mensaje-exito').classList.remove('formulario_mensaje-exito-activo');
         }, 5000);
 
         document.querySelectorAll('.formulario_grupo-correcto').forEach((icono) =>{
             icono.classList.remove('formulario_grupo-correcto');
         });
+    } else {
+		document.getElementById('formulario_mensaje').classList.add('formulario_mensaje-activo');
+        setTimeout(() => {
+            document.getElementById('formulario_mensaje').classList.remove('formulario_mensaje-activo');
+    }, 5000);
     }
 });

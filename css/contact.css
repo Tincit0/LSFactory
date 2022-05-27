@@ -249,7 +249,7 @@ body{
     opacity: 1;
 }
 .formulario_grupo-incorrecto .formulario_input{
-    border: 4px #bb2929;
+    border: 3px solid #bb2929;
 }
 
 
@@ -269,7 +269,6 @@ body{
         .formulario_btn {
             width: 100%;
         }
-
 
 }
 
