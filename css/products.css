@@ -96,7 +96,7 @@ li:last-child {
 }
 @font-face {
     font-family: 'Aurek-Besh';
-    src: url('https://tincit0.github.io/LSFactory/fonts/Aurek-Besh.ttf') format('truetype');
+    src: url('../fonts/Aurek-Besh.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
