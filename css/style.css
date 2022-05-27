@@ -230,7 +230,10 @@ iframe{
     }
 
     iframe{
-        width: 275px;
+        width: fit-content;
+    }
+    img{
+        width: 325px;
     }
 
     .footer{
