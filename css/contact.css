@@ -331,6 +331,10 @@ li:last-child {
 /* MEDIA QUERIES */
 
     @media screen and (max-width: 641px){
+        .contenedor .header{
+            flex-direction: column;
+        }
+
         .contenedor{
             display:inline-flex;
             flex-direction: column;
@@ -381,8 +385,8 @@ li:last-child {
 
 @media screen and (max-width: 1007px){
 
-    .contenedor{
-        /* display: block; */
+    .contenedor .header{
+        flex-direction: column;
     }
 
     .contenedor .header,
