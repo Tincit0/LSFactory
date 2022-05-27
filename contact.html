@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Exo:wght@700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a8d5a2a6c1.js" crossorigin="anonymous"></script>
     <title>Contacto | Lightsaber Factory</title>
 </head>
 <body>
@@ -19,10 +20,83 @@
         </header>
     
         <main class="contenido">
-            <h1>Contenido</h1>
-            <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis, facere nesciunt temporibus laborum harum praesentium iusto delectus. Tenetur, in, numquam sed fugiat velit qui voluptates similique, quis nam corporis iste fuga quae harum tempora quidem illo voluptatem eveniet quo atque nulla alias. Provident quos deleniti, corporis earum totam maiores! Commodi sequi neque ab odio aliquam quos, obcaecati velit ullam exercitationem inventore iure illum voluptatibus corrupti aperiam! Reiciendis, amet, sint, fugiat dolores dicta libero alias debitis explicabo provident praesentium distinctio molestiae officiis doloribus fuga consectetur vero officia harum nobis maxime? Quam, aperiam quidem sit reiciendis obcaecati quo, enim deserunt qui vero dolorum voluptates repellendus vel praesentium nihil consequuntur? Ut impedit, sint sunt minus alias dolorem vitae a ab, error enim fugiat fugit laborum cumque unde eligendi ad porro necessitatibus. Cum aliquid alias reprehenderit dignissimos provident obcaecati laudantium, labore amet itaque commodi iste, quas eum quam, facere unde rerum harum voluptatum fugit.
-            </p>
+            <h1>Formulario de contacto</h1>
+            
+            <form action="" class="formulario" id="formulario">
+                <!-- Grupo: Nombre -->
+                <div class="formulario_grupo" id="grupo_nombre">
+                    <label for="nombre" class="formulario_label">Nombre</label>
+                    <div class="formulario_grupo-input">
+                        <input type="text" class="formulario_input" name="nombre" id="nombre" placeholder="Nombre">
+                        <i class="formulario_validacion-estado fa-solid fa-circle-check"></i>
+                    </div>
+                    <p class="formulario_input-error">El nombre debe contener entre 2 y 40 caracteres.</p>   
+                </div>
+
+                <!-- Grupo: Apellidos -->
+                <div class="formulario_grupo" id="grupo_apellido">
+                    <label for="apellido" class="formulario_label">Apellido</label>
+                    <div class="formulario_grupo-input">
+                        <input type="text" class="formulario_input" name="apellido" id="apellido" placeholder="Apellido">
+                        <i class="formulario_validacion-estado fa-solid fa-circle-check"></i>
+                    </div>
+                    <p class="formulario_input-error">El apellido debe contener entre 2 y 40 caracteres.</p>   
+                </div>
+
+                <!-- Grupo: Correo Electronico-->
+                <div class="formulario_grupo" id="grupo_correo">
+                    <label for="correo" class="formulario_label">Correo Electrónico</label>
+                    <div class="formulario_grupo-input">
+                        <input type="email" class="formulario_input" name="correo" id="correo" placeholder="direccion@correo.com">
+                        <i class="formulario_validacion-estado fa-solid fa-circle-check"></i>
+                    </div>
+                    <p class="formulario_input-error">El correo solo puede contener letras, números, puntos y guiones.</p>   
+                </div>
+
+                <!-- Grupo: Num de telefono-->
+                <div class="formulario_grupo" id="grupo_telefono">
+                    <label for="telefono" class="formulario_label">Número de contacto</label>
+                    <div class="formulario_grupo-input">
+                        <input type="text" class="formulario_input" name="telefono" id="telefono" placeholder="541112345678">
+                        <i class="formulario_validacion-estado fa-solid fa-circle-check"></i>
+                    </div>
+                    <p class="formulario_input-error">El telefono solo puede números y el máximo son 14 dígitos</p>   
+                </div>
+                
+                <!-- Grupo: Campo de consulta-->
+                <div class="formulario_grupo" id="grupo_consulta">
+                    <label for="consulta" class="formulario_label">Consulta</label>
+                    <div class="formulario_grupo-input">
+                        <textarea class="formulario_input" name="consulta" id="consulta" maxlength="500" placeholder="Ingrese su consulta aquí."></textarea>
+                        <i class="formulario_validacion-estado fa-solid fa-circle-check"></i>
+                    </div>
+                    <p class="formulario_input-error">Error inesperado?</p>   
+                </div>  
+                
+
+                <!-- Grupo: Términos y condiciones-->
+                <div class="formulario_grupo" id="grupo_terminos">
+                    <label class="formulario_label">
+                        <input class="formulario_checkbox" type="checkbox" name="terminos" id="terminos">
+                        Acepto los Términos y Condiciones de contacto
+                    </label>
+                </div>
+
+                <!-- Mensaje rellenar formulario -->
+                <div class="formulario_mensaje" id="formulario_mensaje">
+                    <p>
+                        <i class="fa-solid fa-triangle-exclamation"></i>
+                        <b>Error:</b> Por favor rellena el formulario correctamente.</p>
+                </div>
+
+                <!-- Boton enviar y mensaje exito -->
+                <div class="formulario_grupo formulario_grupo-btn-enviar">
+                    <button type="submit" class="formulario_btn">Enviar</button>
+                    <p class="formulario_mensaje-exito" id="formulario_mensaje-exito">Formulario enviado exitosamente!</p>
+                </div>
+            </form>
+
+
         </main>
 
         <aside class="sidebar">
@@ -32,8 +106,8 @@
             </div>
         </aside>
 
-        <div class="widget-1"><h3>Widget 1</h3></div>
-        <div class="widget-2"><h3>Widget 2</h3></div>
+        <!-- <div class="widget-1"><h3>Widget 1</h3></div>
+        <div class="widget-2"><h3>Widget 2</h3></div> -->
 
         <footer class="footer"><h3>© 2022 Developed by Tin, this is a Not-for-profit project.</h3></footer>
     </div>
@@ -49,6 +123,6 @@
             <a class="link" href="contact.html">Contacto</a>
         </nav>
     </header> -->
-    
+    <script src="js/contact.js"></script>
 </body>
 </html>
