@@ -73,6 +73,7 @@ li:last-child {
   
   .active {
     background-color: #0F2040;
+    text-decoration: underline;
   }
 
 .navegacion {

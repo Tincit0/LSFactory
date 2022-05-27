@@ -7,41 +7,52 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Exo:wght@700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Exo:wght@700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a8d5a2a6c1.js" crossorigin="anonymous"></script>
     <title>Bienvenidos a Lightsaber Factory!</title>
 </head>
 <body>
+    
+<div class="contenedor">    
+<header class="header">
+    <h1>LIGHTSABER FACTORY</h1>
+        <ul class="navegacion">
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="products.html">Arsenal</a></li>
+            <li><a href="contact.html">Contacto</a></li>
+            <li style="float:right"><a href="info.html">Sobre nosotros</a></li>
+        </ul> 
+</header>
 
-    <header>
-        <h1>Lightsaber Factory</h1>
-
-        <nav>
-            <input type="checkbox" name="barra" id="caja">
-            <label for="caja" class="boton">
-                <!-- <i class="fas fa-bars"></i> -->
-            </label> 
-            <label class="logo">BARRA</label>
-            <ul>
-                <li><a class="activo" href="index.html">Índice</a></li>
-                <li><a href="products.html">Armería</a></li>
-                <li><a href="contact.html">Contacto</a></li>
-                <li><a href="info.html">Información</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-
-        <div class="Subs">
+<main class="contenido">
+        <div class="subs">
         <h2>Problemas con los padawans?</h2>
-        <h3>Tenemos la solucion!</h3>
+        <h3>En Lightsaber Factory tenemos la solucion!</h3>
         </div>
 
-        <div class="Img">
-        <img src="https://www.ladbible.com/cdn-cgi/image/width=720,quality=70,format=webp,fit=pad,dpr=1/https%3A%2F%2Fs3-images.ladbible.com%2Fs3%2Fcontent%2F568af5355fb615792b61cd1ab77782ca.png" alt="Order 66" width="300">
+        <div class="gif">
+            <iframe src="https://i.giphy.com/media/12qFOaBbu9TZny/giphy.webp" width="480" height="204" frameBorder="0"></iframe>
         </div>
+
+        <p class="info">Nuestros Sables de Luz están fabricados con la más fina mano de obra de toda la galaxia. Fuera de cualquier intromisión por parte de usuarios de la fuerza, encontramos una manera muy eficiente de ensamblar estas raras armas.</p>
+        <p class="info">¡Visita el <a href="products.html">ARSENAL</a> para ver el catálogo!</p>
 
     </main>
 
+    <aside class="sidebar">
+        <h3 id="sub1">NOTICIAS DE LA GALAXIA</h3>
+        <p id="nota">En las últimas horas el Imperio Galáctico ha declarado el toque de queda en los siguientes planetas: Coruscant, Lothal, Batuu, Tython, Ilum, Takodana y Mestare. Hay sospechas de que los rebeldes están agrupándose por esos parajes. Evitar sus puertos y acatar los controles espaciales. </p>
+    </aside>
+
+    <footer class="footer">
+        <h3>© 2022 Developed by Tin, this is a not-for-profit project.</h3>
+        <div class="social">
+            <a href="https://youtu.be/dQw4w9WgXcQ" class="fa-brands fa-facebook"></a>
+            <a href="https://youtu.be/dQw4w9WgXcQ" class="fa-brands fa-twitter"></a>
+            <a href="https://youtu.be/dQw4w9WgXcQ" class="fa-brands fa-youtube"></a>
+            <a href="https://youtu.be/dQw4w9WgXcQ" class="fa-brands fa-instagram"></a>
+        </div>
+    </footer>
+</div>
 </body>
 </html>
