@@ -110,13 +110,13 @@ li:last-child {
     justify-content: center;
     padding: 20px;
     margin-top: 10px;
-    height: 375px;
+    height: 485px;
     width: 100%;
     overflow:hidden;
     z-index: 5;
     position: fixed;
-    right: 0.1px; 
-    bottom: 175px;
+    right: 0; 
+    bottom: 215px;
     
 }
 .notice{
@@ -138,9 +138,7 @@ li:last-child {
     background: #2E4F8C;
     color: #fff;
     grid-area: footer;
-    position: absolute;
-    bottom: 80px;
-    width: 85%;
+    position: relative;
     display: flex;
     flex-direction: row;
     align-items: center;
